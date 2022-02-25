@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+}
+
+@media only screen and (min-width:750px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 255px);
+    margin: 0 100px;
+  }
+
+  .user-card {
+      grid-row: span 2;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+	.grid-container {
+    	  grid-template-columns: repeat(4, 255px);
+    }
+    
+}

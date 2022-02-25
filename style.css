@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red-work: hsl(15, 100%, 70%);
+    --Light-red-study: hsl(348, 100%, 68%);
+    --Soft-blue-play: hsl(195, 74%, 62%);
+    --Lime-green-exercise: hsl(145, 58%, 55%);
+    --Violet-social: hsl(264, 64%, 52%);
+    --Soft-orange-selfcare: hsl(43, 84%, 65%);
+
+/* ### Neutral */
+    --Very-dark-blue: hsl(226, 41%, 10%);
+    --Dark-blue: hsl(236, 45%, 20%);
+    --Desaturated-blue: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: var(--Very-dark-blue);
+}
+
+.grid-container {
+    color: var(--Pale-Blue);
+}
+
+.item {
+    display: grid;
+    color: var(--Pale-Blue);
+    background-color: var(--Dark-blue);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#user-image {
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-right: 17px;
+}
+
+.user-details {
+    display: flex;
+    align-items: center;
+    background-color: var(--Blue);
+    padding: 30px 20px;
+    border-radius: 15px;
+}
+
+#report {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.015em;
+}
+
+#name {
+    font-weight: 200;
+    font-size: 24px;
+    color: white;
+    padding-top: 4px;
+}
+
+.occurrence {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 24px 28px;
+}
+
+.hidden {
+    display: none;
+}
+
+.content {
+    background-color: var(--Dark-blue);
+    padding: 24px 24px;
+    border-radius: 15px;
+}
+
+.icon {
+    justify-self: end;
+    padding-right: 19.5px;
+    height: 70px;
+    width: auto;
+    margin: -8px 0px -16px;
+}
+
+.item-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.daily {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7px;
+}
+
+.item-name {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.next {
+    font-weight: 200;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.previous {
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.item.user-work {
+    background-color: var(--Light-red-work);
+}
+
+.item.user-play {
+    background-color: var(--Soft-blue-play);
+}
+
+.item.user-study {
+    background-color: var(--Light-red-study);
+}
+
+.item.user-exercise {
+    background-color: var(--Lime-green-exercise);
+}
+
+.item.user-social {
+    background-color: var(--Violet-social);
+}
+
+.item.user-self-care {
+    background-color: var(--Soft-orange-selfcare);
+}
+
+.item.user-active {
+    color: white;
+}
+
+.occurrence > p:hover {
+    color: white;
+    cursor: pointer;
+}

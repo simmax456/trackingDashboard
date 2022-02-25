@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media-query.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: white; }
+    .attribution a { color: hsl(91, 55%, 53%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="grid-container">
+
+      <div class="item user-card">
+        <div class="user-details">
+          <img src="/images/image-jeremy.png" alt="User Image" width="70px" height="auto" id="user-image">
+          <div>
+            <p id="report">Report for</p> 
+            <p id="name">Jeremy Robson</p> 
+          </div>
+        </div>
+        <div class="occurrence">
+          <p class="active">Daily</p> 
+          <p>Weekly</p>
+          <p>Monthly</p>
+        </div>
+      </div>
+
+      <div class="item user-work">
+        <img src="/images/icon-work.svg" alt="work icon" class="icon">
+        <div class="content">
+          <div class="item-detail">
+            <p class="item-name">Work</p> 
+            <img src="/images/icon-ellipsis.svg" alt="option icon">
+          </div>
+          <div class="time">
+            <div class="daily">
+              <p class="next">5hrs</p> 
+              <p class="previous">Previous - 7hrs</p> 
+            </div>
+
+            <div class="weekly hidden">
+              <p class="next">32hrs</p> 
+              <p class="previous">Previous - 36hrs</p>
+            </div>
+
+            <div class="monthly hidden">
+              <p class="next">103hrs</p> 
+              <p class="previous">Previous - 128hrs</p>   
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item user-play">
+        <img src="/images/icon-play.svg" alt="play icon" class="icon">
+        <div class="content">
+          <div class="item-detail">
+            <p class="item-name">Play</p> 
+            <img src="/images/icon-ellipsis.svg" alt="option icon">
+          </div>
+          <div class="time">
+            <div class="daily">
+              <p class="next">1hr</p> 
+              <p class="previous">Previous - 2hrs</p> 
+            </div>
+
+            <div class="weekly hidden">
+              <p class="next">32hrs</p> 
+              <p class="previous">Previous - 36hrs</p>
+            </div>
+
+            <div class="monthly hidden">
+              <p class="next">103hrs</p> 
+              <p class="previous">Previous - 128hrs</p>   
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item user-study">
+        <img src="/images/icon-study.svg" alt="study icon" class="icon">
+        <div class="content">
+          <div class="item-detail">
+            <p class="item-name">Study</p> 
+            <img src="/images/icon-ellipsis.svg" alt="option icon">
+          </div>
+          <div class="time">
+            <div class="daily">
+              <p class="next">0hrs</p> 
+              <p class="previous">Previous - 1hr</p> 
+            </div>
+
+            <div class="weekly hidden">
+              <p class="next">32hrs</p> 
+              <p class="previous">Previous - 36hrs</p>
+            </div>
+
+            <div class="monthly hidden">
+              <p class="next">103hrs</p> 
+              <p class="previous">Previous - 128hrs</p>   
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item user-exercise">
+        <img src="/images/icon-exercise.svg" alt="exercise icon" class="icon">
+        <div class="content">
+          <div class="item-detail">
+            <p class="item-name">Exercise</p> 
+            <img src="/images/icon-ellipsis.svg" alt="option icon">
+          </div>
+          <div class="time">
+            <div class="daily">
+              <p class="next">1hr</p> 
+              <p class="previous">Previous - 1hrs</p> 
+            </div>
+
+            <div class="weekly hidden">
+              <p class="next">32hrs</p> 
+              <p class="previous">Previous - 36hrs</p>
+            </div>
+
+            <div class="monthly hidden">
+              <p class="next">103hrs</p> 
+              <p class="previous">Previous - 128hrs</p>   
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item user-social">
+        <img src="/images/icon-social.svg" alt="social icon" class="icon">
+        <div class="content">
+          <div class="item-detail">
+            <p class="item-name">Social</p> 
+            <img src="/images/icon-ellipsis.svg" alt="option icon">
+          </div>
+          <div class="time">
+            <div class="daily">
+              <p class="next">1hr</p> 
+              <p class="previous">Previous - 3hrs</p> 
+            </div>
+
+            <div class="weekly hidden">
+              <p class="next">32hrs</p> 
+              <p class="previous">Previous - 36hrs</p>
+            </div>
+
+            <div class="monthly hidden">
+              <p class="next">103hrs</p> 
+              <p class="previous">Previous - 128hrs</p>   
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="item user-self-care">
+        <img src="/images/icon-self-care.svg" alt="self-care icon" class="icon">
+        <div class="content">
+          <div class="item-detail">
+            <p class="item-name">Self Care</p> 
+            <img src="/images/icon-ellipsis.svg" alt="option icon">
+          </div>
+          <div class="time">
+            <div class="daily">
+              <p class="next">0hrs</p> 
+              <p class="previous">Previous - 1hr</p> 
+            </div>
+
+            <div class="weekly hidden">
+              <p class="next">2hrs</p> 
+              <p class="previous">Previous - 2hrs</p>
+            </div>
+
+            <div class="monthly hidden">
+              <p class="next">7hrs</p> 
+              <p class="previous">Previous - 11hrs</p>   
+            </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/simmax456/">Simon Oladeji</a>.
+  </div>
+</body>
+</html>
