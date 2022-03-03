@@ -5,17 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="grid.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media-query.css">
 
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; color: white; }
-    .attribution a { color: hsl(91, 55%, 53%); }
-  </style>
 </head>
 <body>
   <main>
@@ -23,10 +16,10 @@
 
       <div class="item user-card">
         <div class="user-details">
-          <img src="/images/image-jeremy.png" alt="User Image" width="70px" height="auto" id="user-image">
+          <img src="/images/image-jeremy.png" alt="User Image" width="70px" height="auto" class="user-image">
           <div>
-            <p id="report">Report for</p> 
-            <p id="name">Jeremy Robson</p> 
+            <p class="report">Report for</p> 
+            <p class="name">Jeremy Robson</p> 
           </div>
         </div>
         <div class="occurrence">
@@ -191,11 +184,12 @@
           </div>
       </div>
     </div>
+    
   </main>
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.github.com/simmax456/">Simon Oladeji</a>.
   </div>
+  
 </body>
 </html>
